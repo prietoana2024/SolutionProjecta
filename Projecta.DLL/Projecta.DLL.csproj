@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projecta.DAL\Projecta.DAL.csproj" />
+    <ProjectReference Include="..\Projecta.DTO\Projecta.DTO.csproj" />
+    <ProjectReference Include="..\Projecta.MODELS\Projecta.MODELS.csproj" />
+    <ProjectReference Include="..\Projecta.UTILITY\Projecta.UTILITY.csproj" />
+  </ItemGroup>
+
+</Project>
