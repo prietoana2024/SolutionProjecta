@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Projecta.DAL\Projecta.DAL.csproj" />
+    <ProjectReference Include="..\Projecta.DAL\Projecta.DAL.csproj"  />
     <ProjectReference Include="..\Projecta.DLL\Projecta.DLL.csproj" />
     <ProjectReference Include="..\Projecta.UTILITY\Projecta.UTILITY.csproj" />
   </ItemGroup>
