@@ -11,5 +11,8 @@ namespace Projecta.DTO
         public int IdDivisa { get; set; }
 
         public string? Nombre { get; set; }
+        public int? EsActivo { get; set; }
+
+
     }
 }

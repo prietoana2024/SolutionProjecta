@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projecta.DTO
 {
-    public class ImpuestaoDTO
+    public class ImpuestoDTO
     {
         public int IdImpuesto { get; set; }
 

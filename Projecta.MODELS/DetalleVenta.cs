@@ -9,11 +9,18 @@ public partial class DetalleVenta
 
     public int? IdFactura { get; set; }
 
+    public int? IdProducto { get; set; }
+
+
     public int? IdCaso { get; set; }
 
     public int? Cantidad { get; set; }
 
     public decimal? Precio { get; set; }
+
+    public decimal? Impuesto { get; set; }
+
+    public decimal? Domicilio { get; set; }
 
     public decimal? Total { get; set; }
 
