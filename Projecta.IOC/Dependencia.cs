@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Projecta.DAL;
+using Projecta.DAL.Repository;
+using Projecta.DAL.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +22,8 @@ namespace Projecta.IOC
                 options.UseSqlServer(configuration.GetConnectionString("cadenaSql"));
 
             });
-
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IVentaRepository, VentaRepository>();
         }
     }
 }

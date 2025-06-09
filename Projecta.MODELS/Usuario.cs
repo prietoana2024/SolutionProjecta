@@ -35,6 +35,8 @@ public partial class Usuario
 
     public virtual Rol? IdRolNavigation { get; set; }
 
+    public virtual ICollection<DomicilioUsuario> DomicilioUsuarios { get; } = new List<DomicilioUsuario>();
+
     public virtual ICollection<UsuarioBanco> UsuarioBancos { get; set; } = new List<UsuarioBanco>();
 
     public virtual ICollection<UsuarioCalificacion> UsuarioCalificacions { get; set; } = new List<UsuarioCalificacion>();

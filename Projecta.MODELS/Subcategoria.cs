@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Projecta.MODELS;
 
-public partial class Subcategorium
+public partial class Subcategoria
 {
     public int IdSubCategoria { get; set; }
 

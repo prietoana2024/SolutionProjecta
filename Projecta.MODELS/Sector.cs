@@ -9,5 +9,7 @@ public partial class Sector
 
     public string? Nombre { get; set; }
 
-    public virtual ICollection<Company> Companies { get; set; } = new List<Company>();
+    public string? Url { get; set; }
+
+    public virtual ICollection<Domicilio> Domicilios { get; } = new List<Domicilio>();
 }

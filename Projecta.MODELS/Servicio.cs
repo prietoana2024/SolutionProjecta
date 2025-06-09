@@ -23,6 +23,8 @@ public partial class Servicio
 
     public DateTime? FechaRegistro { get; set; }
 
+    public virtual ICollection<DetalleVenta> DetalleVenta { get; } = new List<DetalleVenta>();
+
     public virtual ICollection<ServicioCaso> ServicioCasos { get; set; } = new List<ServicioCaso>();
 
     public virtual ICollection<ServicioCategorium> ServicioCategoria { get; set; } = new List<ServicioCategorium>();

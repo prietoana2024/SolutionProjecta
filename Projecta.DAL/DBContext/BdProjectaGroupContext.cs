@@ -122,7 +122,7 @@ public partial class BdProjectaGroupContext : DbContext
 
     public virtual DbSet<Simulacion> Simulacions { get; set; }
 
-    public virtual DbSet<Subcategorium> Subcategoria { get; set; }
+    public virtual DbSet<Subcategoria> Subcategoria { get; set; }
 
     public virtual DbSet<TipoDocumento> TipoDocumentos { get; set; }
 
@@ -414,9 +414,6 @@ public partial class BdProjectaGroupContext : DbContext
                 .HasForeignKey(d => d.IdRegimen)
                 .HasConstraintName("FK__Company__IdRegim__22751F6C");
 
-            entity.HasOne(d => d.IdSectorNavigation).WithMany(p => p.Companies)
-                .HasForeignKey(d => d.IdSector)
-                .HasConstraintName("FK__Company__IdSecto__1F98B2C1");
         });
 
         modelBuilder.Entity<Cotizacion>(entity =>
@@ -1011,7 +1008,7 @@ public partial class BdProjectaGroupContext : DbContext
                 .HasConstraintName("FK__Simulacio__IdCat__65370702");
         });
 
-        modelBuilder.Entity<Subcategorium>(entity =>
+        modelBuilder.Entity<Subcategoria>(entity =>
         {
             entity.HasKey(e => e.IdSubCategoria).HasName("PK__Subcateg__0A1EFFE5A5B5D593");
 

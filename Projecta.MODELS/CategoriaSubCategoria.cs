@@ -13,5 +13,5 @@ public partial class CategoriaSubCategoria
 
     public virtual Categoria? IdCategoriaNavigation { get; set; }
 
-    public virtual Subcategorium? IdSubCategoriaNavigation { get; set; }
+    public virtual Subcategoria? IdSubCategoriaNavigation { get; set; }
 }
