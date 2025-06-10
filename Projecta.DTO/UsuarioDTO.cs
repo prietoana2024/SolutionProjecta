@@ -38,9 +38,12 @@ namespace Projecta.DTO
         public string? CategoriaDescripcion { get; set; }
 
 
-        public bool? EsActivo { get; set; }
+        public int? EsActivo { get; set; }
 
         public string? FechaRegistro { get; set; }
+
+        public virtual ICollection<DomicilioDTO> DomiciliosDTO { get; set; }
+
 
         public virtual ICollection<BancoDTO> UsuarioBancos { get; set; } = new List<BancoDTO>();
 
